@@ -53,3 +53,8 @@ should return next result:
 
 In this implementation works auto failover. So if master will go down or becoma unreachable, some of the slaves
 will become the master.
+
+
+```
+CHANGE MASTER TO MASTER_HOST='192.168.124.143', MASTER_PORT=1441, MASTER_USER='root', MASTER_PASSWORD='n9e_1234', MASTER_LOG_FILE='mysql-bin-1.000003', MASTER_LOG_POS=152;
+```

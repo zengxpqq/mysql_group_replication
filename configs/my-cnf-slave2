@@ -7,7 +7,7 @@
 #
 # max_binlog_size = 4096
 
-server-id = 100
+server-id = 300
 
 # Can be used via Mysql Workbench/SequelPro
 default_authentication_plugin     = mysql_native_password
