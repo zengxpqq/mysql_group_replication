@@ -55,6 +55,22 @@ In this implementation works auto failover. So if master will go down or becoma 
 will become the master.
 
 
+
+
+
 ```
+查看 master 状态
+SHOW  MASTER STATUS;
+
+MASTER_LOG_FILE = File
+MASTER_LOG_POS = position
+
 CHANGE MASTER TO MASTER_HOST='192.168.124.143', MASTER_PORT=1441, MASTER_USER='root', MASTER_PASSWORD='n9e_1234', MASTER_LOG_FILE='mysql-bin-1.000003', MASTER_LOG_POS=152;
+
+查看 slave 状态
+SHOW SLAVE STATUS;
+
+
+Slave_IO_Running = Yes
+Slave_SQL_Running = Yes
 ```
